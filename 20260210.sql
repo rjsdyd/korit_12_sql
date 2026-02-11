@@ -48,8 +48,8 @@ SELECT country, COUNT(DISTINCT id) AS 국가별회원수
 SELECT country, COUNT(DISTINCT id) AS 국가별회원수 
 	FROM users
 	GROUP BY country
-   HAVING COUNT(DISTINCT id) > 7
-   ORDER BY id DESC;
+  HAVING COUNT(DISTINCT id) > 7
+  ORDER BY id DESC;
 
 SELECT staff_id AS 직원아이디 ,COUNT(DISTINCT id) AS 주문건수, count(distinct user_id) AS 주문회원수
 	FROM orders
